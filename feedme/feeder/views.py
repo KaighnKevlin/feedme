@@ -3,4 +3,4 @@ from django.http import HttpResponse
 
 
 def index(request):
-    return HttpResponse("Feedme index.")
+    return HttpResponse("Feed Me index.")
