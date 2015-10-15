@@ -11,3 +11,9 @@ def result(request):
     restaurant = Restaurant.objects.all()[5]
     context = {'restaurant': restaurant}
     return render(request, 'result.html', context)
+    
+def profile(request):
+    #user = User.objects.all()[2]
+    #context = {'user': user}
+    context = {}
+    return render(request, 'profile.html', context)
