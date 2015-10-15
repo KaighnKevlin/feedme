@@ -1,3 +1,16 @@
-<h1>Nanataco</h1>
+<h1>
+  {{ restaurant.name }}
+</h1>
 
-<p>YUM</p>
+<p>Cuisine: American (New)</p>
+
+<p>Average rating: {{ restaurant.rating }}</p>
+
+<p>{{ restaurant.address }}, {{ restaurant.city }} {{ restaurant.zip_code }}</p>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3227.1552091171448!2d-78.92107778473196!3d36.01650308011755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89ace3fa5e8acd0d%3A0x513d71ace8817145!2s1116+Broad+St%2C+Durham%2C+NC+27705!5e0!3m2!1sen!2sus!4v1444951547544" width="600" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+<br>
+
+<a style="margin-top: 15px;" href="/results">I don't like this, give me something else!</a>
+
