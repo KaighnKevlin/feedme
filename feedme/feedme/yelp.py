@@ -65,7 +65,7 @@ def request(host, path, url_params=None):
     oauth_request.sign_request(oauth2.SignatureMethod_HMAC_SHA1(), consumer, token)
     signed_url = oauth_request.to_url()
     
-    print u'Querying {0} ...'.format(url)
+    #print u'Querying {0} ...'.format(url)
 
     conn = urllib2.urlopen(signed_url, None)
     try:
@@ -103,7 +103,7 @@ def query_api(term, location):
       rest_data['rating'] = business['rating']
       rest_data['categories'] = categories
       restaurant_list.append(rest_data)
-    print restaurant_list
+    print json.dumps(restaurant_list)
 
     
     
