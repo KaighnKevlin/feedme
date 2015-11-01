@@ -88,9 +88,9 @@ def query_api(term, location):
     businesses = response.get('businesses')
     restaurant_list = []
     for business in businesses:
-      categories = []
+      categories = ""
       for cat in business['categories']:
-        categories.append(cat[0])
+        categories += ("*"+cat[0])
       address = ' '.join(business['location']['address'])
       city = business['location']['city']
       zip_code = business['location']['postal_code']

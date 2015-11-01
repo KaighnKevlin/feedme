@@ -7,3 +7,4 @@ class Restaurant(models.Model):
     city = models.CharField(max_length=15)
     zip_code = models.IntegerField()
     rating = models.IntegerField()
+    categories = models.CharField(max_length=100)
