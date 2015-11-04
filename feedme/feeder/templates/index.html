@@ -5,19 +5,23 @@
 <p>Where do you want to eat?</p>
 
 <select>
-  <option value="durham">Durham</option>
-  <option value="chapel_hill">Chapel Hill</option>
-  <option value="dc">DC</option>
-  <option value="nyc">New York</option>
+	<option>I don't care</option>
+{% for c in cities %}
+	<option>
+		{{ c }}
+	</option>
+{% endfor %}
 </select>
 
 <p>What kind of food do you want?</p>
 
 <select>
-  <option value="italian">Italian</option>
-  <option value="pizza">Pizza</option>
-  <option value="american">American</option>
-  <option value="sushi">Sushi</option>
+	<option>Doesn't matter</option>
+{% for c in categories %}
+	<option>
+		{{ c }}
+	</option>
+{% endfor %}
 </select>
 
 <br>
