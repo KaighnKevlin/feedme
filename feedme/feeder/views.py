@@ -12,7 +12,6 @@ def index(request):
         cities.append(c['city'])
     cities = set(cities)
     cats = Restaurant.objects.values('categories')
-    print cats
     categories = []
     for c in cats:
         cat_list = c['categories'][1:].split('*')
@@ -23,8 +22,6 @@ def index(request):
     return render(request, 'index.html', context)
 
 def result(request):
-    print "request"
-    print request
     other = Restaurant.objects.filter(city="Durham")
     count = len(other)
     restaurant = other[random.randint(0, count)]

@@ -4,14 +4,18 @@
 
 <p>Where do you want to eat?</p>
 
-<select>
-	<option>I don't care</option>
-{% for c in cities %}
-	<option>
-		{{ c }}
-	</option>
-{% endfor %}
-</select>
+<form method="POST">
+	<select name="city">
+		<option>I don't care</option>
+	{% for c in cities %}
+		<option id="{{ c }}">
+			{{ c }}
+		</option>
+	{% endfor %}
+	</select>
+</form>
+
+
 
 <p>What kind of food do you want?</p>
 
