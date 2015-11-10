@@ -1,0 +1,4 @@
+ name  |       address        |  city  | zip_code | rating | categories  
+-------+----------------------+--------+----------+--------+-------------
+ Mateo | 109 W Chapel Hill St | Durham |    27701 |      4 | *Tapas Bars
+(1 row)
